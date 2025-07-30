@@ -1,0 +1,194 @@
+<!-- home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Application System</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="bi bi-mortarboard-fill me-2"></i> ExamApp
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item px-2"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#">Register</a></li>
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="bi bi-box-arrow-in-right me-1"></i> Login
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow">
+              <li><a class="dropdown-item" href="#"><i class="bi bi-person-gear me-1"></i> Admin Login</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-people-fill me-1"></i> User Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-img text-center py-5 bg-light">
+    <h1 class="display-5 fw-bold">Welcome to Exam Application System</h1>
+  </section>
+
+  <!-- Our Services Section -->
+<div class="our-services-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-down">Our Services - Exam Application System</h2>
+
+    <div class="row g-4">
+      <!-- Service Card 1 - Left -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="card h-100 shadow-sm border-0 text-center p-3 service-card">
+          <div class="card-body">
+            <i class="bi bi-pencil-square fs-1 text-primary"></i>
+            <h5 class="card-title mt-3">Create & Manage Exams</h5>
+            <p class="card-text">Easily create online exams, manage questions, and schedule tests with full control.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 2 - Up -->
+      <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm border-0 text-center p-3 service-card">
+          <div class="card-body">
+            <i class="bi bi-people-fill fs-1 text-success"></i>
+            <h5 class="card-title mt-3">User Roles</h5>
+            <p class="card-text">Separate logins and features for Students and Admins to ensure secure and organized access.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 3 - Right -->
+      <div class="col-md-4 col-sm-12" data-aos="fade-left" data-aos-delay="300">
+        <div class="card h-100 shadow-sm border-0 text-center p-3 service-card">
+          <div class="card-body">
+            <i class="bi bi-bar-chart-line-fill fs-1 text-danger"></i>
+            <h5 class="card-title mt-3">Results & Reports</h5>
+            <p class="card-text">Instant results and performance analytics with downloadable reports for admins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- About Section -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col text-center">
+        <h2>About Us</h2>
+        <p class="lead">This platform is designed for students to register, appear for various technical exams, and view results efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exam Cards -->
+<section class="exam-section container my-5">
+    <h3 class="text-center mb-4">Available Exam Categories</h3>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/images/java.jpg" class="card-img-top" alt="Java">
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">OOPs, collections, core syntax, exceptions and more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/images/python.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Core syntax, logic building, data types, functions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/images/mern.png" class="card-img-top" alt="MERN">
+          <div class="card-body">
+            <h5 class="card-title">MERN Stack</h5>
+            <p class="card-text">MongoDB, Express, React, Node.js development skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/images/dotnet.jpg" class="card-img-top" alt=".NET">
+          <div class="card-body">
+            <h5 class="card-title">.NET Fullstack</h5>
+            <p class="card-text">ASP.NET MVC, C#, SQL Server, Angular, Web API.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-5 bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 mb-4">
+          <img src="/images/cap.jpeg" alt="Logo" height="50">
+          <span class="examapp-title">Exam<span class="highlight">App</span></span>
+          <p class="mt-3">Empowering students through seamless exam management and automation.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">QUICK LINKS</h5>
+          <a href="/" class="footer-link d-block">Home</a>
+          <a href="#" class="footer-link d-block">About Us</a>
+          <a href="#" class="footer-link d-block">View Exams</a>
+          <a href="#" class="footer-link d-block">Contact</a>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">CONTACT US</h5>
+          <p><i class="bi bi-geo-alt-fill me-2"></i> 456 Edu Lane, Pune</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> support@examhub.com</p>
+          <p><i class="bi bi-telephone-fill me-2"></i> +91 9876543210</p>
+        </div>
+
+        <div class="col-md-3 mb  -4">
+          <h5 class="fw-bold">FOLLOW US</h5>
+          <a href="#" class="footer-social me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-social me-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="footer-social me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer-social me-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <hr style="border-color: rgba(255,255,255,0.2)">
+      <p class="text-center mt-3 mb-0">&copy; 2025 ExamHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

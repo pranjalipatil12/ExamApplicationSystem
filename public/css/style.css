@@ -1,0 +1,231 @@
+/* General Body Styling */
+body {
+  background-color: #2b0037;
+  color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 70px; /* Space for fixed navbar */
+}
+
+/* Fixed Navbar */
+.navbar,
+footer {
+  background: linear-gradient(135deg, #d63384, #6f42c1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #f8f9fa !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-img {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/main.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* Logo Text */
+.examapp-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.examapp-title .highlight {
+  color: #080808;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #6f42c1;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #d63384;
+  color: #fff;
+}
+
+/* Footer Section */
+footer {
+  color: #ffffff;
+  padding: 50px 0;
+  font-size: 0.95rem;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.footer-social {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social:hover {
+  color: #ffc107;
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+footer img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+footer .container {
+  max-width: 1200px;
+}
+
+/* Our Services Section */
+.our-services-section {
+  background-color: #2b0037;
+  padding: 60px 0;
+}
+
+/* Service Cards */
+.service-card {
+  background-color: #fff;
+  border-radius: 12px;
+  color: #000;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+  color: #d63384;
+}
+
+.service-card .card-title {
+  color: #000;
+  font-weight: bold;
+}
+
+.service-card .card-text {
+  color: #222;
+}
+
+/* Exam Categories Section */
+.exam-section {
+  color: #fff;
+  padding: 60px 0;
+}
+
+.exam-section h3 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.exam-section .card {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.exam-section .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.exam-section .card-body {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1rem;
+}
+
+.exam-section .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.exam-section .card-text {
+  color: #333333;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* AOS Animations */
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-right"] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+} 
