@@ -1,13 +1,9 @@
 let promodel = require("../models/user.js");
 const db = require("../../db");
 
-
-exports.homepage = ((req,res) =>{
-    if (!req.session.user) {
-        return res.redirect('/login'); 
-    }
-    res.render("home.ejs", { user: req.session.user });
-});
+exports.homepage =(req,res) =>{
+    res.render("home.ejs");
+};
 
 
 //user registration
