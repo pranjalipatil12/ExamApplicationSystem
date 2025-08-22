@@ -2,12 +2,15 @@
 const express = require ('express');
 let bodyParser = require ('body-parser');
 let db= require("../db.js");
+let cors=require("cors");
 let router = require("./routes/router");
 require("dotenv").config();
+
+
 const session = require('express-session'); 
 const app=express();
-
-app.set("view engine","ejs");
+app.use(cors());
+// app.set("view engine","ejs");
 
 app.use(express.static("public"));
 app.use(express.json());
@@ -24,4 +27,3 @@ app.use(session({
 app.use("/",router);
 
 module.exports=app;
-// ...existing code...
