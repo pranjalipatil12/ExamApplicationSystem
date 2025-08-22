@@ -9,6 +9,14 @@ let submissionControl = require("../controller/submissioncont");
 const { route } = require("../app");
 let router = express.Router();
 
+// router.get("/",examControl.homepage);
+router.get("/",examControl.homepage);
+router.post("/register",examControl.register);
+router.post("/login",examControl.login);
+
+router.post("/createschedule", scheduleControl.createSchedule);
+
+
 // router.get("/",userControl.homepage);
 
 //user registration and login
