@@ -1,10 +1,10 @@
 const db = require("../../db");
 
 // Create exam
-exports.createExam = (title, total_marks, passing_marks) => {
+exports.createExam = (examName,totalMarks,passingMarks,course) => {
     return new Promise((resolve, reject) => {
-        const query = "INSERT INTO exam (title, total_marks, passing_marks) VALUES (?, ?, ?)";
-        db.query(query, [title, total_marks, passing_marks], (err, result) => {
+        const query = "INSERT INTO exam VALUES ('0',?, ?, ?,?)";
+        db.query(query, [examName,totalMarks,passingMarks,course], (err, result) => {
             if (err) return reject(err);
             resolve(result);
         });
@@ -33,10 +33,10 @@ exports.viewExamById = (examid) => {
 };
 
 // Update exam by ID
-exports.updateExamById = (examid, title, total_marks, passing_marks) => {
+exports.updateExamById = (examName, totalMarks, passingMarks, course, examid) => {
     return new Promise((resolve, reject) => {
-        const query = "UPDATE exam SET title = ?, total_marks = ?, passing_marks = ? WHERE examid = ?";
-        db.query(query, [title, total_marks, passing_marks, examid], (err, result) => {
+        const query = "UPDATE exam SET examname = ?, total_marks = ?, passing_marks = ?, course = ? WHERE examid = ?";
+        db.query(query, [examName, totalMarks, passingMarks, course, examid], (err, result) => {
             if (err) return reject(err);
             resolve(result);
         });

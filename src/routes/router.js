@@ -37,7 +37,7 @@ router.post("/createExam", examControl.createExam);
 router.get("/viewAllExam", examControl.viewAllExam);
 router.get("/viewExamById", examControl.viewExamById);
 router.put("/updateExamById", examControl.updateExamById);
-router.delete("/deleteExamById", examControl.deleteExamById);
+router.delete("/deleteExamById/:id", examControl.deleteExamById);
 router.get("/searchExamsByDate", examControl.searchExamsByDate);
 
 // Question routes
